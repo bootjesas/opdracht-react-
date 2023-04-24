@@ -17,3 +17,28 @@
   color: red;
   
 }
+
+.station {
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  height: 150px;
+  width: 300px;
+  background-color: rgba(101, 89, 186, 0.2); /* transparantie toegevoegd met rgba */
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: rgba(0, 0, 0, 0); /* achtergrond opnieuw instellen op transparant */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+}

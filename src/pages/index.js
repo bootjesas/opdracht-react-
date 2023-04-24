@@ -45,12 +45,13 @@ export default function Home() {
   }
   console.log(stations)
   return (
-    <div>
-      <input type="text" value={filter} onChange={handleFilterChange}/>
-      {stations.slice(0,7).map(station => 
-        <div key={station.id}>
-          <Link href={`/stations/${station.id}`}>{station.name}: {getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</Link>
-        </div>)}
+    <div className={styles.card}>
+     {stations.slice(0,7).map(station => 
+     <div key={station.id} className={styles.station}>
+       <div className={styles.info}>
+       <Link href={`/stations/${station.id}`}>{station.name}: {getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</Link>
+      </div>
+     </div>)}
     </div>
   )
 }
