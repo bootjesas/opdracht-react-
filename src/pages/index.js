@@ -1,7 +1,7 @@
 import styles from '@/styles/Home.module.css'
 import {useState, useEffect} from 'react';
 import useNetwork from '@/data/network';
-import {getDistance} from '@/utils/getDistance.js';
+import {getDistance} from '@/utils/_getDistance';
 import Link from 'next/link';
 
 export default function Home() {
