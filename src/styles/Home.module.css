@@ -5,13 +5,15 @@
 .isNotVisible {
   opacity: 0;
 }
+
 @font-face {
   font-family: 'Outfit';
   src: url('https://fonts.gstatic.com/s/outfit/v9/0YY8MVJWvR2l_M_6rYuC3A8sTDbIVg.ttf');
   font-weight: 600;
 }
-
 .getallen{
   font-family: 'outfit';
   size: 900px;
+  color: red;
+  
 }

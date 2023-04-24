@@ -14,8 +14,8 @@ export default function Home() {
   return (
     <div>
       <h1>{station.name}</h1>
-      <p className='getallen'> vrije fietsen:{station.free_bikes}</p>
-      <p className='getallen'> open stal plaatsen:{station.empty_slots}</p>
+      <p className={styles.getallen}> vrije fietsen:{station.free_bikes}</p>
+      <p className={styles.getallen}> open stal plaatsen:{station.empty_slots}</p>
 
 
     </div>
