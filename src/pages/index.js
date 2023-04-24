@@ -3,6 +3,7 @@ import {useState, useEffect} from 'react';
 import useNetwork from '@/data/network';
 import {getDistance} from '@/utils/_getDistance';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   const [filter, setFilter] = useState('');
@@ -45,13 +46,21 @@ export default function Home() {
   }
   console.log(stations)
   return (
-    <div className={styles.card}>
-     {stations.slice(0,7).map(station => 
-     <div key={station.id} className={styles.station}>
-       <div className={styles.info}>
-       <Link href={`/stations/${station.id}`}>{station.name}: {getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</Link>
+    <>
+      <h1 className={styles.title}>Choose your station</h1>
+      <div className={styles.card}>
+       {stations.slice(0,7).map(station => 
+       <div key={station.id} className={styles.station}>
+         <div className={styles.info}>
+         <Link href={`/stations/${station.id}`}>{station.name}: {getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</Link>
+        </div>
+        <Image className={styles.Image} src="/fiets.png" alt="fiets" width={50} height={50} />
+        <Image className={styles.Image} src="/location.png" alt="fiets" width={50} height={50} />
+
+
+
+       </div>)}
       </div>
-     </div>)}
-    </div>
+    </>
   )
 }

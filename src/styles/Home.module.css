@@ -34,3 +34,16 @@
 
   margin-top: 20px;
 }
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.Image{
+  margin-top: 2%;
+  display: flex;
+  flex-direction: column;
+}
