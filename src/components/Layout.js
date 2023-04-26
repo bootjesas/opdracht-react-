@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import { useState } from 'react';
-import styles from '@/styles/Home.module.css'
+import Link from 'next/link';
+import styles from '@/styles/Home.module.css';
 import Image from 'next/image';
 
 
@@ -13,10 +13,11 @@ export default function Layout({ children }) {
 
   return (
     <>
-  
-   
       <nav className={styles.nav}>
-      <Image className={styles.logo} src="/bike.png" alt="logo" width={150} height={50} />
+        <Link href="/index">
+            <Image className={styles.logo} src="/bike.png" alt="logo" width={150} height={50} />
+  
+        </Link>
         <div className={styles.menuIcon} onClick={toggleMenu}>
           <span></span>
           <span></span>

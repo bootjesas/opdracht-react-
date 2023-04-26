@@ -1,11 +1,9 @@
-import styles from '@/styles/Home.module.css'
 import {useState, useEffect} from 'react';
 import useNetwork from '@/data/network';
 import {getDistance} from '@/utils/_getDistance';
 import Link from 'next/link';
 import Image from 'next/image';
-import Layout from '@/components/Layout';
-
+import styles from '@/styles/Home.module.css';
 
 export default function Home() {
   const [filter, setFilter] = useState('');
@@ -52,22 +50,21 @@ export default function Home() {
       <h1 className={styles.title}>Choose your station</h1>
       <div className={styles.card}>
        {stations.slice(0,7).map(station => 
-      <div key={station.id} className={styles.station}>
-
-      <div className={styles.info}>
-        <Link href={`/stations/${station.id}`}>{station.name}:</Link>
-        
-      </div>
-      <div className={styles.details}>
-        <Image className={styles.Image} src="/fiets.png" alt="fiets" width={50} height={50} />
-        <div className={styles.distance}>
-          <Image className={styles.Image} src="/location.png" alt="fiets" width={50} height={50} />
-          <span>{getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</span>
+        <div key={station.id} className={styles.station}>
+          <div className={styles.info}>
+          <Link href={`/stations/${station.id}`}>{station.name}: {getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</Link>
+          </div>
+          <div className={styles.details}>
+            <Image className={styles.Image} src="/fiets.png" alt="fiets" width={50} height={50} />
+            <div className={styles.distance}>
+              <Image className={styles.Image} src="/location.png" alt="fiets" width={50} height={50} />
+              <span>{getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</span>
+            </div>
+          </div>
         </div>
-      </div>
-  
-       </div>)}
+       )}
       </div>
     </>
   )
 }
+
