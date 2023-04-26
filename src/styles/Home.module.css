@@ -39,8 +39,9 @@
   font-size: 36px;
   font-weight: bold;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 80px;
   margin-bottom: 25px;
+  z-index: 2;
 }
 
 .Image{
@@ -53,11 +54,17 @@
   margin-bottom: 10px;
 }
 .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #010137;
+  height: 70px;
+  z-index: 1;
 }
 
 .menuIcon {
@@ -69,7 +76,7 @@
   cursor: pointer;
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 45px;
 }
 
 
@@ -115,4 +122,7 @@
 .menu a {
   font-size: 2rem;
   margin: 2rem;
+}
+.logo {
+  margin-left: -15px;
 }
