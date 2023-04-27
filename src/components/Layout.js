@@ -14,7 +14,7 @@ export default function Layout({ children }) {
   return (
     <>
       <nav className={styles.nav}>
-        <Link href="/index">
+        <Link href="/">
             <Image className={styles.logo} src="/bike.png" alt="logo" width={150} height={50} />
   
         </Link>
