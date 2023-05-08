@@ -4,6 +4,7 @@ import {getDistance} from '@/utils/_getDistance';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.css';
+import StationImage from '@/components/StationImage';
 
 export default function Home() {
   const [filter, setFilter] = useState('');
@@ -51,17 +52,20 @@ export default function Home() {
       <div className={styles.card}>
        {stations.slice(0,7).map(station => 
         <div key={station.id} className={styles.station}>
-          <div className={styles.info}>
-          <Link href={`/stations/${station.id}`}>{station.name}</Link>
+          <div>
+            <Link href={`/stations/${station.id}`}>{station.name}</Link>
           </div>
-          <div className={styles.details}>
-            <div className={styles.bikes}>
-             <Image className={styles.Image} src="/fiets.png" alt="fiets" width={50} height={50} />
-             <p className={styles.fiets}>{station.free_bikes}</p>
-            </div>
-            <div className={styles.distance}>
-              <Image className={styles.Image1} src="/location.png" alt="fiets" width={50} height={50} />
-              <span className={styles.afstand}>{getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</span>
+          <div className={styles.info}>
+            <StationImage station={station}/>
+            <div className={styles.details}>
+              <div className={styles.bikes}>
+              <Image className={styles.Image} src="/fiets.png" alt="fiets" width={50} height={50} />
+              <p className={styles.fiets}>{station.free_bikes}</p>
+              </div>
+              <div className={styles.distance}>
+                <Image className={styles.Image1} src="/location.png" alt="fiets" width={50} height={50} />
+                <span className={styles.afstand}>{getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</span>
+              </div>
             </div>
           </div>
         </div>

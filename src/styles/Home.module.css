@@ -26,7 +26,6 @@
 
 .info {
   display: flex;
-  justify-content: flex-end;
   color: white;
   background-color: rgba(0, 0, 0, 0); /* achtergrond opnieuw instellen op transparant */
 
@@ -54,7 +53,6 @@
 
 
 .station {
-  display: flex;
   margin-bottom: 10px;
 }
 .nav {
@@ -145,9 +143,18 @@
   margin-top: 15%;
 }
 .Image1{
-  margin-top: 25%;
+  margin-top: 10%;
+  margin-left: 30%;
 }
 .afstand{
-  margin-top: 42%;
+  margin-top: 25%;
   margin-left: 15%;
+}
+.foto{
+  border-radius: 20%;
+  margin-top: 2%;
+}
+.Image{
+  
+  margin-left: 30%;
 }
