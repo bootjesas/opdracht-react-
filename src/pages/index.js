@@ -59,7 +59,7 @@ export default function Home() {
             <StationImage station={station}/>
             <div className={styles.details}>
               <div className={styles.bikes}>
-              <Image className={styles.Image} src="/fiets.png" alt="fiets" width={50} height={50} />
+              <Image className={styles.Image} src="/fiets.png" alt="fiets" width={100} height={50} />
               <p className={styles.fiets}>{station.free_bikes}</p>
               </div>
               <div className={styles.distance}>
