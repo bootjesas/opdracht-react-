@@ -50,28 +50,28 @@ export default function Home() {
     <>
       <h1 className={styles.title}>Choose your station</h1>
       <div className={styles.card}>
-       {stations.slice(0,7).map(station => 
-        <div key={station.id} className={styles.station}>
-          <div>
-            <Link href={`/stations/${station.id}`}>{station.name}</Link>
-          </div>
-          <div className={styles.info}>
-            <StationImage station={station}/>
-            <div className={styles.details}>
-              <div className={styles.bikes}>
-              <Image className={styles.Image} src="/fiets.png" alt="fiets" width={100} height={50} />
-              <p className={styles.fiets}>{station.free_bikes}</p>
+        {stations.slice(0,7).map(station => 
+          <Link href={`/stations/${station.id}`} key={station.id}>
+            <div className={styles.station}>
+              <div>
+                {station.name}
               </div>
-              <div className={styles.distance}>
-                <Image className={styles.Image1} src="/location.png" alt="fiets" width={50} height={50} />
-                <span className={styles.afstand}>{getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</span>
+              <div className={styles.info}>
+                <StationImage station={station}/>
+                <div className={styles.details}>
+                  <div className={styles.bikes}>
+                    <Image className={styles.Image} src="/fiets.png" alt="fiets" width={100} height={50} />
+                    <p className={styles.fiets}>{station.free_bikes}</p>
+                  </div>
+                  <div className={styles.distance}>
+                    <Image className={styles.Image1} src="/location.png" alt="fiets" width={50} height={50} />
+                    <span className={styles.afstand}>{getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-       )}
+          </Link>
+        )}
       </div>
     </>
-  )
-}
-
+  )}
