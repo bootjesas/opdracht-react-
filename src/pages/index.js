@@ -52,13 +52,16 @@ export default function Home() {
        {stations.slice(0,7).map(station => 
         <div key={station.id} className={styles.station}>
           <div className={styles.info}>
-          <Link href={`/stations/${station.id}`}>{station.name}: {getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</Link>
+          <Link href={`/stations/${station.id}`}>{station.name}</Link>
           </div>
           <div className={styles.details}>
-            <Image className={styles.Image} src="/fiets.png" alt="fiets" width={50} height={50} />
+            <div className={styles.bikes}>
+             <Image className={styles.Image} src="/fiets.png" alt="fiets" width={50} height={50} />
+             <p className={styles.fiets}>{station.free_bikes}</p>
+            </div>
             <div className={styles.distance}>
-              <Image className={styles.Image} src="/location.png" alt="fiets" width={50} height={50} />
-              <span>{getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</span>
+              <Image className={styles.Image1} src="/location.png" alt="fiets" width={50} height={50} />
+              <span className={styles.afstand}>{getDistance(location.latitude, location.longitude, station.latitude, station.longitude).distance/1000}km</span>
             </div>
           </div>
         </div>
