@@ -312,8 +312,21 @@
     border-radius: 20px;
     margin-bottom: 10px;
     padding: 10px;
-    height: 200px;
+    height: 210px;
     width: 350px;
     background-color: rgba(101, 89, 186, 0.2); /* transparantie toegevoegd met rgba */
   }
+  .getallen{
+    margin-top: 5%;
+    margin-left: 4%;
+    
+  }
+  
+  .getallen1{
+    margin-left: 4%;
+  }
+  .fotostation{
+    margin-top: 5%;
+  }
+
 }
