@@ -1,3 +1,4 @@
+
 @media (max-width: 768px) {
 .isVisible {
   opacity: 1;
@@ -20,8 +21,8 @@
   border-radius: 20px;
   margin-bottom: 10px;
   padding: 10px;
-  height: 150px;
-  width: 300px;
+  height: 180px;
+  width: 350px;
   background-color: rgba(101, 89, 186, 0.2); /* transparantie toegevoegd met rgba */
 }
 
@@ -141,6 +142,7 @@
 .fiets{
   margin-left: 20%;
   margin-top: 15%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .Image1{
   margin-top: 10%;
@@ -149,15 +151,24 @@
 .afstand{
   margin-top: 25%;
   margin-left: 15%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .foto{
   border-radius: 20%;
   margin-top: 2%;
+  height: 130px;
+  width: 130px;
 }
 .Image{
   
   margin-left: 30%;
 }
+.name{
+  font-size: larger;
+  margin-bottom: 2%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 }
 
 
@@ -180,7 +191,11 @@
   .station {
     width: calc(33.33% - 20px);
   }
-
+.name{
+  font-size: larger;
+  margin-bottom: 2%;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
   .distance{
     display: flex;
     flex-direction: row;
@@ -192,24 +207,30 @@
   .fiets{
     margin-left: 8%;
     margin-top: -36%;
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   .Image1{
     margin-top: -20%;
-    margin-left: 45%;
+    margin-left: 50%;
     width: 40px;
     height: 40px;
   }
   .afstand{
     margin-top: -15%;
     margin-left: 10%;
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   .foto{
     border-radius: 20%;
     margin-top: 2%;
+    width: 150px;
+    height: 150px;
   }
   .Image{
     
-    margin-left: 45%;
+    margin-left: 50%;
     margin-top: -40%;
     width: 50px;
     height: 40px;
@@ -291,8 +312,8 @@
     border-radius: 20px;
     margin-bottom: 10px;
     padding: 10px;
-    height: 150px;
-    width: 300px;
+    height: 200px;
+    width: 350px;
     background-color: rgba(101, 89, 186, 0.2); /* transparantie toegevoegd met rgba */
   }
 }

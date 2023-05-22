@@ -53,7 +53,7 @@ export default function Home() {
         {stations.slice(0,12).map(station => 
           <Link href={`/stations/${station.id}`} key={station.id}>
             <div className={styles.station}>
-              <div>
+              <div className={styles.name}>
                 {station.name}
               </div>
               <div className={styles.info}>
