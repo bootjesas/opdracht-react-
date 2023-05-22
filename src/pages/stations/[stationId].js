@@ -2,7 +2,7 @@
 import useNetwork from '@/data/network';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
-
+import styles from '@/styles/Home.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBicycle } from '@fortawesome/free-solid-svg-icons';
 import { faUnlockKeyhole } from '@fortawesome/free-solid-svg-icons';
@@ -73,8 +73,8 @@ export default function StationDetail() {
 
   return (
     <div>
-      <div className="stationcard">
-        <div className="whiteboard">
+      <div className={styles.stationcard}>
+        <div className={styles.whiteboard}>
           <p>
             {' '}
             <FontAwesomeIcon size="xl" className="icon" icon={faBicycle} />
@@ -95,7 +95,7 @@ export default function StationDetail() {
           </p>
         </div>
       </div>
-      <div className="wrap">
+      <div className={styles.wrap}>
         <img
           src="/arrow.png"
           alt="volg mij"
