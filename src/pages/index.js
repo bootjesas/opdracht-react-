@@ -50,7 +50,7 @@ export default function Home() {
     <>
       <h1 className={styles.title}>Choose your station</h1>
       <div className={styles.card}>
-        {stations.slice(0,7).map(station => 
+        {stations.slice(0,12).map(station => 
           <Link href={`/stations/${station.id}`} key={station.id}>
             <div className={styles.station}>
               <div>
