@@ -3,7 +3,7 @@ import useNetwork from '@/data/network';
 import {getDistance} from '@/utils/_getDistance';
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '@/styles/Home.module.css';
+
 import StationImage from '@/components/StationImage';
 
 export default function Home() {
