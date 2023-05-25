@@ -187,6 +187,9 @@
   color: white;
 }
 
+.pijl{
+  width: 200px;
+}
 }
 
 
@@ -347,8 +350,8 @@
     margin-top: 5%;
   }
 .wrap{
-  margin-left: 42%;
-  margin-top: 15%;
+  margin-left: 37%;
+  margin-top: 10%;
 }
 .stationcard {
   color: white;
@@ -370,6 +373,9 @@
   margin-top: 80px;
   margin-bottom: 25px;
   z-index: 2;
+}
+.pijl{
+  width: 300px;
 }
 
 }

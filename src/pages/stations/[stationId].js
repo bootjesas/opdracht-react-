@@ -96,11 +96,10 @@ export default function StationDetail() {
         </div>
       </div>
       <div className={styles.wrap}>
-        <img
+        <img className={styles.pijl}
           src="/arrow.png"
           alt="volg mij"
           id="point-to-location"
-          className="arrow"
         />
         {showRequestPermissions && (
           <div>
